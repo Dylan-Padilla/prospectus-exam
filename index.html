@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width">
+<meta property="og:title" content="prospectus-DP.knit" />
+
+
+
+
+
+
+<meta name="description" content="prospectus-DP.knit">
+
+<script id="pandoc-meta" type="application/json">
+{"newpage_html_class":"page-break-after","csl":"apa-numeric-superscript-brackets.csl","title":"<font size = '5'>\n<center>\nPatterns and mechanisms of life history evolution </font><br><br><br><br><font size = '4'> Research prospectus and written comprehensive exam </font><font size = '3'><br><br><br><br><br><br>Dylan Padilla<br>✉️ <a href=\"mailto:dpadil10@asu.edu\" class=\"email\">dpadil10@asu.edu</a><br>🌐 <a href=\"https://dylanpadilla.netlify.app/\" class=\"uri\">https://dylanpadilla.netlify.app/</a><br><br><br><br><br><br>Evolutionary Biology PhD program<br>School of Life Sciences, Arizona State University, Tempe, AZ 85282, USA.<br><br><br><br><br>2022-10-27<br><br><br><img src = 'imgs/asu_logo.png' width = 165, height = 140>\n</center>\n</font>","lof":true,"toc-title":"Table of contents","output":{"pagedown::html_paged":{"self_contained":false,"css":["default-fonts","default","custom-pages.css"],"toc":true}},"bibliography":"packages.bib","link-citations":"no"}
+</script>
+
+<title>prospectus-DP.knit</title>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function() {
+  // Retrieve previous config object if defined
+  window.PagedConfig = window.PagedConfig || {};
+  let beforePaged = PagedConfig.before;
+  window.PagedConfig.before = async () => {
+    if (beforePaged) await beforePaged();
+    return new Promise((resolve, reject) => {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      var src = `https://mathjax.rstudio.com/latest/MathJax.js` + "?config=TeX-MML-AM_CHTML";
+      if (location.protocol !== "file:" && /^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+      script.src = src;
+      window.MathJax = {
+        AuthorInit: () => {
+          MathJax.Hub.Register.StartupHook("Begin", () => {
+            MathJax.Hub.Queue(resolve);
+          });
+        }
+      };
+      document.getElementsByTagName("head")[0].appendChild(script);
+    });
+  };
+})();
+</script>
+
+<link href="prospectus-DP_files/paged-0.18.1/css/default-fonts.css" rel="stylesheet" />
+<link href="prospectus-DP_files/paged-0.18.1/css/default.css" rel="stylesheet" />
+<script src="prospectus-DP_files/paged-0.18.1/js/config.js"></script>
+<script src="prospectus-DP_files/paged-0.18.1/js/paged.js"></script>
+<script src="prospectus-DP_files/paged-0.18.1/js/hooks.js"></script>
+<script src="prospectus-DP_files/kePrint-0.0.1/kePrint.js"></script>
+<link href="prospectus-DP_files/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+
+<link rel="stylesheet" href="custom-pages.css" type="text/css" />
+
+</head>
+
+<body>
+
+<div class="running-h1-title"></div>
+
+<div class="running-h2-title"></div>
+
+
+
+<div class="front-page">
+<div id="header" class="title-page">
+<h1 class="title"><font size = '5'>
+<center>
+Patterns and mechanisms of life history evolution </font><br><br><br><br><font size = '4'> Research prospectus and written comprehensive exam </font><font size = '3'><br><br><br><br><br><br>Dylan Padilla<br>✉️ <a href="mailto:dpadil10@asu.edu" class="email">dpadil10@asu.edu</a><br>🌐 <a href="https://dylanpadilla.netlify.app/" class="uri">https://dylanpadilla.netlify.app/</a><br><br><br><br><br><br>Evolutionary Biology PhD program<br>School of Life Sciences, Arizona State University, Tempe, AZ 85282, USA.<br><br><br><br><br>2022-10-27<br><br><br><img src = 'imgs/asu_logo.png' width = 165, height = 140>
+</center>
+</font></h1>
+</div>
+</div>
+
+<div class="front-matter-container">
+<div id="TOC" class="level1 toc front-matter">
+<h1 class="toc-title">Table of contents</h1>
+<ul>
+<li><a href="#LOF">List of Figures</a></li>
+<li><a href="#background">Background</a>
+<ul>
+<li><a href="#current-state-of-knowledge">Current state of knowledge</a></li>
+</ul></li>
+<li><a href="#chapter-macroclimatic-and-maternal-effects-on-the-evolution-of-reproductive-traits-in-lizards"><span class="toc-section-number">1</span> Chapter: Macroclimatic and maternal effects on the evolution of reproductive traits in lizards</a>
+<ul>
+<li><a href="#introduction"><span class="toc-section-number">1.1</span> Introduction</a></li>
+<li><a href="#materials-and-methods"><span class="toc-section-number">1.2</span> Materials and Methods</a></li>
+<li><a href="#statistical-analyses"><span class="toc-section-number">1.3</span> Statistical analyses</a></li>
+<li><a href="#results"><span class="toc-section-number">1.4</span> Results</a></li>
+<li><a href="#discussion"><span class="toc-section-number">1.5</span> Discussion</a></li>
+</ul></li>
+<li><a href="#chapter-the-correlated-evolution-of-foraging-mode-and-reproductive-effort-in-lizards"><span class="toc-section-number">2</span> Chapter: The correlated evolution of foraging mode and reproductive effort in lizards</a>
+<ul>
+<li><a href="#introduction-1"><span class="toc-section-number">2.1</span> Introduction</a></li>
+<li><a href="#materials-and-methods-1"><span class="toc-section-number">2.2</span> Materials and Methods</a></li>
+<li><a href="#statistical-analyses-1"><span class="toc-section-number">2.3</span> Statistical analyses</a></li>
+<li><a href="#results-1"><span class="toc-section-number">2.4</span> Results</a></li>
+<li><a href="#discussion-1"><span class="toc-section-number">2.5</span> Discussion</a></li>
+</ul></li>
+<li><a href="#chapter-foraging-efficiency-of-rover-and-sitter-larvae-of-drosophila-melanogaster"><span class="toc-section-number">3</span> Chapter: Foraging efficiency of rover and sitter larvae of <em>Drosophila melanogaster</em></a>
+<ul>
+<li><a href="#introduction-2"><span class="toc-section-number">3.1</span> Introduction</a></li>
+<li><a href="#experimental-design"><span class="toc-section-number">3.2</span> Experimental design</a></li>
+<li><a href="#prediction"><span class="toc-section-number">3.3</span> Prediction</a></li>
+</ul></li>
+<li><a href="#chapter-the-evolution-of-foraging-polymorphism-in-drosophila-melanogaster"><span class="toc-section-number">4</span> Chapter: The evolution of foraging polymorphism in <em>Drosophila melanogaster</em></a>
+<ul>
+<li><a href="#introduction-3"><span class="toc-section-number">4.1</span> Introduction</a></li>
+<li><a href="#materials-and-methods-2"><span class="toc-section-number">4.2</span> Materials and Methods</a></li>
+</ul></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+</div>
+
+<div class="main">
+<div id="LOF" class="section level1 lof unnumbered front-matter">
+<h1>List of Figures</h1>
+<ul>
+<li><a href="#fig:fig1">1.1</a> Path models depicting relationships among body temperature and life-history traits derived from optimality models. Abbreviation in the path diagrams are as follows: BT = body temperature; CS = clutch size; FS = maternal length; HS = hatchling/neonate length; PP = primary production; PR = annual precipitation.</li>
+<li><a href="#fig:fig2">1.2</a> Best-fit models of the evolution of reproductive traits considering body temperature (a)  and environmental temperature (b)  as independent variable. Thicker arrows indicate stronger effects. Values in parentheses denote the standard errors of the path coefficients.</li>
+<li><a href="#fig:fig3">1.3</a> Evolution of the reproductive effort among 669 species of lizards. The dataset used to perform path analyses was reduced to 486 species because we could not extract data of climatic variables for all species present in the phylogeny.</li>
+<li><a href="#fig:fig4">1.4</a> Relative importance of the causal models describing the evolution of reproductive traits in lizards.</li>
+<li><a href="#fig:fig5">2.1</a> A conceptual model depicting putative relationships among foraging behavior, energetics, predation risk, and reproductive effort. The predicted relationships were derived from theoretical models of life-history evolution.</li>
+<li><a href="#fig:fig6">2.2</a> Random sample of stochastic character maps depicting the evolution of foraging mode in 485 species of lizards. Bars at the tips of the phylogeny represent log-transformed values of reproductive effort for all lizards, but not the outgroup, Sphenodon punctatus. Pie charts on internal nodes represent posterior probability estimates resulting from 1,000 simulations of the character histories. Major clades are enumerated as follows: 1)  Gekkota, 2)  Scincoidea, 3)  Lacertoidea, 4)  Anguimorpha, 5)  Toxicofera, and 6)  Iguania. Lizard photos by Mark O’Shea.</li>
+<li><a href="#fig:fig7">2.3</a> Effects of maternal mass and foraging mode on the evolution of reproductive effort of lizards, as determined by phylogenetic generalized least squares analysis. (a)  Difference in reproductive effort among foraging modes assuming body mass as a proxy for energy. (b)  Difference in reproductive effort among foraging modes assuming the scaled mass index as a proxy for energy.</li>
+<li><a href="#fig:fig8">3.1</a> A theoretical model relating the cumulative energy gain m, as a function of time spent foraging, t. (a)  Larger larvae reach their maximum capacity at a higher value of m than small larvae. (b)  Rovers that are smaller but more efficient foragers may grow faster at a smaller size than larger and less efficient sitter larvae. t_{r} and t_{s} in (b)  represent the optimal foraging time of rover and sitter, respectively.</li>
+<li><a href="#fig:fig9">3.2</a> Hypothetical environment in which food is uniformly distributed.</li>
+<li><a href="#fig:fig10">3.3</a> Hypothetical environment in which food is scarce and distributed in patches.</li>
+<li><a href="#fig:fig11">3.4</a> Prediction of the study.</li>
+<li><a href="#fig:fig12">4.1</a> Available data of genome-wide allele frequency estimates from &gt;270 population based samples of D. melanogaster worldwide. DGN: samples available from the Drosophila Genome Nexus project; DrosEU: samples collected by the European Drosophila Population Genomics Consortium; DrosRTEC: samples collected by the Real Time Evolution Consortium.</li>
+</ul>
+</div>
+<div id="background" class="section level1 unnumbered">
+<h1>Background</h1>
+<body>
+<p align="justify">
+Life-history theory consists of models designed to explain how environmental factors shape the evolution of survival, growth, and reproduction.<span class="citation"><sup>[1,2]</sup></span> Much of this theory focuses on the covariation of body size and reproductive traits, given a tradeoff between the size and number of offspring.<span class="citation"><sup>[3]</sup></span> The optimal covariation depends on ways in which body size affects the availability of energy, the constraints on reproduction, and the survival of offspring.<span class="citation"><sup>[4–6]</sup></span> Often, larger females have more resources to spare, can carry more offspring during gestation, pass larger offspring during birth, or provide better care after birth. These factors influence the constraints on or the benefit of specific reproductive tactics. For example, when the abdominal cavity and pelvic opening constrain offspring size, larger females can produce larger offspring. Conversely, a small female may be unable to produce an offspring of the optimal size when this size exceeds the physical constraint.<span class="citation"><sup>[7–11]</sup></span> This constraint results in a positive relationship between maternal size and offspring size,<span class="citation"><sup>[12]</sup></span> in which each female produces the largest egg possible for its body size.
+</p>
+<p align="justify">
+Natural selection can produce a similar relationship when larger females have greater surplus energy.<span class="citation"><sup>[6]</sup></span> Depending on both its foraging efficiency and the availability of resources, a larger female should use its additional energy to produce larger clutches. However, given a tradeoff between offspring size and offspring number, the investment in more offspring may be balanced by a decrease in the size of offspring. Similarly, when increasing the number of offspring increases competition among the resulting siblings, a female should use additional energy to produce larger offspring instead of more offspring. Interestingly, a mixed strategy can be optimal when intraspecific competition and offspring size both exert important influences on offspring survival; in such cases, larger females should lay larger offspring and larger clutches.<span class="citation"><sup>[6]</sup></span>
+</p>
+<p align="justify">
+Because growth and body size are affected by environmental conditions, the covariation among abiotic factors should shape the evolution of life-history traits. Temperature is a well-known factor that directly and indirectly affects the evolution of the life history. The direct effect occurs when environmental conditions determine the relationship between the size and performance of offspring. Warmer environments often promote a high relative growth rate, potentially reducing the minimal size of offspring. In such cases, a female can produce more, smaller eggs as the optimal reproductive tactic. The indirect effect occurs because temperature greatly affects the size at which an organism reproduces.<span class="citation"><sup>[13–15]</sup></span> When exposed to a warmer environment, an organism may grow faster but mature younger at a smaller size, a pattern of phenotypic plasticity observed among some ectotherms<span class="citation"><sup>[16–18]</sup></span> and many endotherms.<span class="citation"><sup>[19,20]</sup></span> If a warmer environment causes an organism to reproduce when younger and smaller, the smaller parent should make fewer or smaller offspring. In addition, variation in body size may also depends on precipitation, which is a good predictor of primary production.<span class="citation"><sup>[21,22]</sup></span> Generally, abundant precipitation and radiation increase the rate of photosynthesis,<span class="citation"><sup>[23]</sup></span> which provides the energy required for growth and reproduction of organisms at higher trophic levels. If more productive areas enable organisms to consume more prey, one should expect these organisms to mature younger at smaller size; this indirect effect on maternal size should affect the size and number of offspring of the mother, as discussed earlier.
+</p>
+<p align="justify">
+In addition to the effects of the environment, the foraging efficiency of an organism may profoundly influence its life history. The ability of an organism to gather and assimilate more food may promote follicular growth during the reproductive season; it may also increase energy stores to initiate reproduction, and it may reduce age at first reproduction. For example, female vipers that had good body condition early in vitellogenesis produced large litters.<span class="citation"><sup>[24]</sup></span> Similarly, vipers that gained more mass during follicular growth produced larger offspring. Early reproduction gives offspring sufficient time to mature in the same year that they hatched, which enables them to participate as adults in the subsequent breeding season.<span class="citation"><sup>[25]</sup></span>
+</p>
+<div id="current-state-of-knowledge" class="section level2 unnumbered">
+<h2>Current state of knowledge</h2>
+<p align="justify">
+Although a covariation among environmental and maternal factors is expected to drive the evolution of the life history, most studies have focused on temperature as the main selective pressure. This bias has resulted in a wealth of conflicting results in the current literature as several comparative and species-specific studies have found no consistent trend. For instance, an analysis of over 100 studies,<span class="citation"><sup>[13]</sup></span> concluded that in more than 80% of the cases, decreased temperature leads to maturation later at a larger size. However, the variation among populations in natural environments paints a more complex picture. Given that environmental temperature generally increases with decreasing latitude, we should expect to observe a positive relationship between latitude and offspring size. Interestingly, a meta-analysis by<span class="citation"><sup>[26]</sup></span> revealed no general relationship between latitude and offspring size; relationships ranged from strongly negative to strongly positive. Moreover, the variation among natural populations likely reflects a combination of phenotypic plasticity and genetic divergence. A recent experiment by<span class="citation"><sup>[27]</sup></span> illustrates this point. They compared the reproductive traits of lizards from low or high elevation to that of lizards transplanted from low elevation to high elevation. Lizards from high elevation produced larger eggs than did lizards from low elevation; however, lizards transplanted to high elevation produced eggs of intermediate size. Thus, the difference in egg size between populations might partly stem from genetic factors, as well as environmental conditions during early development. Moreover, body size has diverse effects on reproductive traits, when analyzed independently of temperature. Larger females increase annual biomass production,<span class="citation"><sup>[28]</sup></span> produce more eggs,<span class="citation"><sup>[29]</sup></span> or both larger and more eggs.<span class="citation"><sup>[30]</sup></span> If these diverse patterns reflect diverse processes among taxa, a model focused on a single mechanism would be unable to explain variation in reproductive traits. Therefore, a unified approach to examine the combined effects of different environmental and maternal factors on the broad-scale variation in reproductive traits might provide the best insight.
+</p>
+<p align="justify">
+Although experimental data on foraging efficiency are lacking, comparative methods have been used to explore how foraging mode and life-history traits have evolved. These interspecific analyses have focused mostly on the reproductive effort of lizards. The earliest analysis of 22 species revealed an interesting pattern: sit-and-wait species had a greater reproductive effort than widely-foraging species.<span class="citation"><sup>[31]</sup></span> The authors suggested that widely-foraging species might have to carry fewer or smaller offspring, because moving long distances with a voluminous clutch compromises speed, which in turn decreases the chance of escaping a predator. A subsequent analysis of data for 50 species of lizards supports this result by testing a model in which predation risk increased with increasing reproductive effort.<span class="citation"><sup>[31]</sup></span> Roff (2002) extended support for this model in a comparative analysis of 130 species of lizards.<span class="citation"><sup>[1]</sup></span> However, none of these early analyses controlled for potential phylogenetic correlations that might generate spurious relationships between foraging mode and reproductive effort,<span class="citation"><sup>[32]</sup></span> especially because foraging mode varies more among families of lizards than within them. A more recent analysis, using phylogenetic comparative methods, failed to detect a significant relationship between foraging mode and reproductive effort.<span class="citation"><sup>[33]</sup></span> Thus, the long-standing prediction of a relationship between foraging mode and life-history traits is currently unsupported.
+</p>
+</div>
+</div>
+<div id="chapter-macroclimatic-and-maternal-effects-on-the-evolution-of-reproductive-traits-in-lizards" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Chapter: Macroclimatic and maternal effects on the evolution of reproductive traits in lizards</h1>
+<div id="introduction" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Introduction</h2>
+<p align="justify">
+Much of life-history theory rests on fundamental assumptions about constraints on the acquisition and allocation of energy to growth and reproduction. In general, the allocation of energy to reproduction depends on maternal size, which in turn depends on environmental factors experienced throughout the life of the mother (Figure <a href="#fig:fig1">1.1</a>).
+</p>
+<p align="justify">
+Phylogenetic path analysis is an effective way to test hypotheses on the relationships among macroclimatic factors, maternal factors, and reproductive traits of lizards. Previously,<span class="citation"><sup>[34]</sup></span> combined path modeling, phylogenetic analysis, and information theory to infer the most likely relationships among environmental temperature, body size, and reproductive traits for 19 populations of sceloporine lizards. They found that temperature likely affects the number and size of offspring indirectly, via its effect on maternal body size. Since then, other researchers compiled published data for body sizes and reproductive traits of several species of lizards.<span class="citation"><sup>[28,35–38]</sup></span> Here, we use these data to evaluate competing hypotheses about the evolution of reproductive traits through phylogenetic path analyses (Figure <a href="#fig:fig1">1.1</a>). In doing so, we found that annual precipitation is the major driver of the life history. By using phylogenetic path analysis, we suggest a more general mechanism underlying the evolution of life-history traits of lizards.
+</p>
+</div>
+<div id="materials-and-methods" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Materials and Methods</h2>
+<p align="justify">
+We used published estimates of life histories for 486 species of lizards, belonging to 34 families. We used the mean snout-vent length for hatchlings or neonates (mm), and adult females, as a measure of body size among species. Similarly, we averaged the lowest and highest reported means of clutch or litter sizes for each species (see<span class="citation"><sup>[36]</sup></span> for details). We used the length of hatchlings as an estimate of offspring size, rather than the mass of eggs, because the latter might reflect variation in water content rather than energy content in species of lizards that lay poorly calcified eggs.<span class="citation"><sup>[37,39]</sup></span> Moreover, hatchling size can be estimated for viviparous species as well as oviparous species.
+</p>
+<style>
+
+p.caption {
+  font-size: 0.9em;
+  text-align: justify;
+
+}
+
+caption {
+
+  font-size: 0.9em;
+  text-align: justify;
+
+}
+
+
+</style>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig1"></span>
+<img src="imgs/rev_hyp_bt.jpeg" alt="Path models depicting relationships among body temperature and life-history traits derived from optimality models. Abbreviation in the path diagrams are as follows: BT = body temperature; CS = clutch size; FS = maternal length; HS = hatchling/neonate length; PP = primary production; PR = annual precipitation." width="500" />
+<p class="caption">
+Figure 1.1: Path models depicting relationships among body temperature and life-history traits derived from optimality models. Abbreviation in the path diagrams are as follows: BT = body temperature; CS = clutch size; FS = maternal length; HS = hatchling/neonate length; PP = primary production; PR = annual precipitation.
+</p>
+</div>
+<p align="justify">
+Because the range of nearly all reptiles have been recently mapped,<span class="citation"><sup>[40]</sup></span> we could obtain data on annual air temperature and annual precipitation across the range of each species. These climatic variables derived from the monthly values of temperature and rainfall for global land areas at a resolution of 30 s.<span class="citation"><sup>[41]</sup></span> Similarly, we obtained data on log-transformed values of net primary production the net amount of solar energy converted to plant organic matter through photosynthesis measured in units of elemental carbon. This measure represents the primary source of trophic energy for the world’s ecosystems.<span class="citation"><sup>[42]</sup></span> We used polygonal range maps representing species extent of occurrence to run a zonal statistical algorithm in the software QGIS version 3.22.2-Białowieża; this algorithm enabled us to extract the means of climatic data across pixels of a map for each species. In addition to extracting climatic data, we also gathered published records of body temperature measured in the field for 320 species. These data consist of an average of the minimal and maximal temperatures reported in the literature.<span class="citation"><sup>[36]</sup></span>
+</p>
+</div>
+<div id="statistical-analyses" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> Statistical analyses</h2>
+<p align="justify">
+We tested our hypotheses (see Figure <a href="#fig:fig1">1.1</a>) by performing phylogenetic path analysis of data of body temperature, and environmental temperature. Examining the explanatory power of competing models involving different relationships among variables enabled us to identify the most plausible hypothesis given the available data, and thus infer the relative importance of mechanisms described by optimality models. These analyses were performed with the <em>phylopath</em> library of the Statistical Software R version 4.0.5,<span class="citation"><sup>[43,44]</sup></span> and a recent time-calibrated phylogeny for squamate taxa.<span class="citation"><sup>[45]</sup></span> We calculated each model’s goodness of fit with the Fisher’s C statistic,<span class="citation"><sup>[46]</sup></span> obtained as follows:
+</p>
+<p><span class="math display">\[C = -2\sum_{i=1}^{k}ln(p_{i}) \]</span></p>
+<p align="justify">
+where <span class="math inline">\(k\)</span> is the number of conditional independencies in the minimal set and <span class="math inline">\(p_{i}\)</span> is the null probability associated with each of the predicted independence claims tested. A conditional independency specifies the list of pairs of variables that are statistically independent conditioning on a set of other variables in the causal model. For example, a conditional independency that supports one of our hypotheses relates body temperature (BT), maternal size (FS) and clutch size (CS; see Figure <a href="#fig:fig1">1.1</a>b). In this example, clutch size is d-separated from body temperature, which means that there is not an arrow linking these variables (or “vertices”) in the directed acyclic graphic. Maternal size is considered the causal “parent” of both body temperature and clutch size, because it is the variable directly linked with both vertices (BT and CS). It is possible now to translate these d-separation statements to statistical linear models in which we test the independence of clutch size and temperature, conditioning on their parent, maternal size. The C statistic is a maximum likelihood estimate that follows a <span class="math inline">\(x^2\)</span> distribution with degrees of freedom <span class="math inline">\(df=2k\)</span>. Therefore, it provides a convenient statistic for testing the goodness of fit of the whole path model.<span class="citation"><sup>[47]</sup></span> The path model does not provide a good fit to the data if the <span class="math inline">\(p\)</span> value of the <span class="math inline">\(C\)</span> statistic is below the alpha value (0.05). We compared models using a modified version of the Akaike Information Criterion (<span class="math inline">\(AIC\)</span>) known as the <span class="math inline">\(C\)</span> statistic Information Criterion (<span class="math inline">\(CIC\)</span>), proposed by.<span class="citation"><sup>[48]</sup></span> Here, we calculated the <span class="math inline">\(CIC_{c}\)</span>, which is the equivalent of <span class="math inline">\(CIC\)</span> with a correction for small sample sizes, as follows:
+</p>
+<p><span class="math display">\[CIC_{c}=C+2q\frac{n}{(n-1-q)}\]</span></p>
+<p align="justify">
+where <span class="math inline">\(C\)</span> is the maximum likelihood of the particular model, <span class="math inline">\(q\)</span> is the number of parameters estimated in the path model, and <span class="math inline">\(n\)</span> is the sample size (number of species). The most likely model has the lowest <span class="math inline">\(CIC_{c}\)</span> value.<span class="citation"><sup>[49]</sup></span>
+</p>
+<p align="justify">
+Our data analyses were entirely based on full model averaging, by which one calculates a likelihood-weighted average of parameters among all models ranked. Model averaging causes the path coefficients that do not occur in all models to shrink toward zero.<span class="citation"><sup>[43]</sup></span> We reported the conditional independencies that supported the averaged model. We also reported the p-values of each independence statements, and an estimate of the Pagel’s <span class="math inline">\(\lambda\)</span> to account for phylogenetic non-independence of each statement. The parameter <span class="math inline">\(\lambda\)</span> can vary between 0 and 1; a value of 0 for a conditional independency indicates that the relationship between the life histories involved is not constrained by the phylogeny, whereas a value of 1 indicates the converse.
+</p>
+</div>
+<div id="results" class="section level2" number="1.4">
+<h2><span class="header-section-number">1.4</span> Results</h2>
+<p align="justify">
+Phylogenetic path analyses revealed that annual precipitation directly and indirectly affected the evolution of the reproductive traits in lizards (Figure <a href="#fig:fig2">1.2</a>). The direct effect stems from its negative relationship with hatchling size, while the indirect effect is mediated by its effect on maternal size. These analyses also indicate that body temperature had little or no effect on the evolution of reproductive tactics, either directly or indirectly. We drew this conclusion from the coefficients derived from full model averaging, which indicated negligible effects of body temperature on maternal size and hatchling size (Figure <a href="#fig:fig2">1.2</a>a). Importantly, we found a similar pattern when using the mean environmental temperatures across the species range as an independent variable in our analysis (Figure <a href="#fig:fig2">1.2</a>b).
+</p>
+<p align="justify">
+Our analyses also revealed that maternal size greatly determined the evolution of hatchling size and clutch size. Specifically, larger females simultaneously produce larger offspring and more offspring (Figure <a href="#fig:fig2">1.2</a>). By accounting for maternal size in our phylogenetic path analysis, we observed the expected negative relationship between hatchling size and clutch size. Likely, larger females produce larger clutches of larger offspring by having more surplus energy to allocate to reproduction (Figure <a href="#fig:fig3">1.3</a>).
+</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig2"></span>
+<img src="imgs/rev_pannel.jpeg" alt="Best-fit models of the evolution of reproductive traits considering body temperature (a) and environmental temperature (b) as independent variable. Thicker arrows indicate stronger effects. Values in parentheses denote the standard errors of the path coefficients." width="500" />
+<p class="caption">
+Figure 1.2: Best-fit models of the evolution of reproductive traits considering body temperature (a) and environmental temperature (b) as independent variable. Thicker arrows indicate stronger effects. Values in parentheses denote the standard errors of the path coefficients.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig3"></span>
+<img src="imgs/tree4.jpeg" alt="Evolution of the reproductive effort among 669 species of lizards. The dataset used to perform path analyses was reduced to 486 species because we could not extract data of climatic variables for all species present in the phylogeny." width="500" />
+<p class="caption">
+Figure 1.3: Evolution of the reproductive effort among 669 species of lizards. The dataset used to perform path analyses was reduced to 486 species because we could not extract data of climatic variables for all species present in the phylogeny.
+</p>
+</div>
+</div>
+<div id="discussion" class="section level2" number="1.5">
+<h2><span class="header-section-number">1.5</span> Discussion</h2>
+<p align="justify">
+A model describing a direct and an indirect effect of precipitation on the evolution of reproductive traits was strongly supported (see Figure <a href="#fig:fig1">1.1</a>g). On one hand, we found a negative relationship between precipitation and hatchling size. On the other hand, we found a positive effect of precipitation on maternal size. Both relationships might reflect selective pressures on body size associated with food availability. Greater precipitation often results in greater primary production, which translates to greater food abundance for lizards.<span class="citation"><sup>[21,22]</sup></span> In a more productive environment, a juvenile lizard could mature younger at smaller size. Additionally, given the tradeoff between the size and number of offspring, a mature lizard should produce more, smaller offspring in an environment that favors growth. Although the averaged model indicates no strong direct effect of primary production on maternal size (Figure <a href="#fig:fig2">1.2</a>a), our analysis revealed that a model including this path should also be considered important based on the <span class="math inline">\(\Delta CIC_{c}\)</span> (Figure <a href="#fig:fig4">1.4</a>). Alternatively, we consider other mechanisms by which precipitation can directly influence body size. The water-conservation hypothesis provides one such mechanism. This hypothesis predicts stronger selection for large size in dry environments, given that the size-specific rate of water loss decreases with increasing size.<span class="citation"><sup>[50–53]</sup></span>
+</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig4"></span>
+<img src="imgs/mod_sel.jpeg" alt="Relative importance of the causal models describing the evolution of reproductive traits in lizards." width="500" />
+<p class="caption">
+Figure 1.4: Relative importance of the causal models describing the evolution of reproductive traits in lizards.
+</p>
+</div>
+<p align="justify">
+The absence of a thermal effect on the evolution of reproductive tactics might partially be explained by thermoregulation. Many species of lizards use behavior and physiology to buffer variation in environmental temperature.<span class="citation"><sup>[54]</sup></span> This buffering ability reduces selective pressures on thermal physiology, slowing evolutionary divergence over space and time.<span class="citation"><sup>[54–56]</sup></span> The conservation of thermal tolerance within species has been widely recognized,<span class="citation"><sup>[56,57]</sup></span> but this phenomenon is also evident among some species of lizards.<span class="citation"><sup>[58,59]</sup></span> Body temperature constrains life histories because it exerts an important influence on the acquisition of energy required for growth and reproduction. Normally, the detection, capture, ingestion, digestion, and assimilation of food are processes that determine the acquisition of energy. These processes perform well over an optimal range of body temperatures and perform poorly at temperatures outside this optimum.<span class="citation"><sup>[60]</sup></span> Whether a lizard’s optimal temperature for performance remains similar in space and time depends on the effectiveness of thermoregulation. A thermoregulating lizard might bask in open areas more often at high altitudes or latitudes, but it might use shaded areas more often at low altitudes or latitudes.<span class="citation"><sup>[61,62]</sup></span> Consequently, the optimal body temperatures of species from different altitudes or latitudes might not change drastically.<span class="citation"><sup>[54]</sup></span> If this behavior enabled some lizards to maintain their body temperature close to the thermal optimum regardless of the climate, thermoregulation would have slowed the divergence of life-history traits among species. Because nocturnal lizards have fewer opportunities to behaviorally thermoregulate than diurnal lizards do, we expect temperature to have a greater effect on the reproductive tactics of these lizards.
+</p>
+<p align="justify">
+Additionally, local adaptation of thermal physiology among species might reduce the impact of environmental temperature on the life history of lizards. If the preferred body temperatures of species have diverged to track the environmental temperatures of their habitats, natural selection would favor a subsequent shift in the thermal optima for performance.<span class="citation"><sup>[63]</sup></span> This coadaptation of thermoregulatory behavior and thermal physiology would enable each species to perform best at the body temperature commonly experienced in its environment. In lizards,<span class="citation"><sup>[64]</sup></span> found a significant correlation between the preferred temperature and the thermal optima for sprint speed among 13 species of lacertids. Similarly,<span class="citation"><sup>[65]</sup></span> found that thermal optima for sprinting correlated strongly with field body temperature among 19 species of iguanid lizards. Thus, the coadaptation of thermoregulatory behavior and thermal physiology seems a likely factor contributing to the patterns of interspecific variation that we observed in general among lizards.
+</p>
+<p align="justify">
+Our study indicates that precipitation is the most likely driver of the evolution of reproductive traits in lizards. Although biologists have intensely debated the mechanisms by which temperature affects body size,<span class="citation"><sup>[15,66,67]</sup></span> we found no consistent relationship between temperature and body size among species of lizards. Interestingly, we now know that lizards with larger amounts of reproductive resources produce both larger hatchlings and larger clutches. Although we do not know the selective pressures responsible for this pattern, theoretical models tell us that parental care or intraspecific competition could play a role.<span class="citation"><sup>[6]</sup></span> In lizards, we lack experimental evidence that larger females provide better parental care. We also do not know the relationship between offspring size and competitive ability for most species. Therefore, empirical evidence of this nature would clarify whether these mechanisms play any role in the evolution of life histories in lizards. For longer-lived species such as lizards, experimental studies of life-history evolution have lagged behind comparative studies. Still, phylogenetic path analysis has enabled us to disentangle some evolutionary relationships among life histories. This analysis sharpens our focus on mechanisms underlying major evolutionary patterns, stimulating the development of a more general life-history theory.
+</p>
+</div>
+</div>
+<div id="chapter-the-correlated-evolution-of-foraging-mode-and-reproductive-effort-in-lizards" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Chapter: The correlated evolution of foraging mode and reproductive effort in lizards</h1>
+<div id="introduction-1" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Introduction</h2>
+<p align="justify">
+Life-history theory suggests that the optimal reproductive effort of an organism is affected by factors such as energy acquisition and predation risk. The observation that some organisms actively search for their prey and others ambush them creates the expectation of different energy needs and predation risk associated with each foraging behavior, the so-called “foraging-mode paradigm.” In vertebrates, the foraging behaviors lie along a continuum, ranging from the energetically demanding strategy of searching for prey to the energetically conservative strategy of ambushing prey.<span class="citation"><sup>[68,69]</sup></span> During the past 50 years, ecologists have developed a set of hypotheses about how an organism’s foraging mode relates to its life history.<span class="citation"><sup>[11,31,70,71]</sup></span> These relationships stem from two major assumptions (Figure <a href="#fig:fig5">2.1</a>). First, a widely-foraging lizard spends more energy while foraging than a sit-and-wait lizard, but might also consume enough food during an activity season to have more surplus energy.<span class="citation"><sup>[72–77]</sup></span> However, a sit-and-wait lizard might have a more diverse diet, because it encounters prey less frequently than a widely-foraging lizard does.<span class="citation"><sup>[78]</sup></span> Second, a widely-foraging lizard could suffer a greater risk of predation when movements are conspicuous to predators.<span class="citation"><sup>[79]</sup></span> Risk of predation might also affect the evolution of reproductive effort, because carrying a greater mass of offspring reduces a female’s ability to evade a predator.<span class="citation"><sup>[80]</sup></span> Both a greater energy supply and a greater mortality risk would select for a genotype that matures at an earlier age and allocates more energy to reproduction, manifested as more or larger offspring.<span class="citation"><sup>[24,81]</sup></span> Finally, the load associated with food consumption may compromise the speed of an animal, increasing its vulnerability to predators.<span class="citation"><sup>[82,83]</sup></span> In this model, a suite of traits associated with foraging mode would coadapt to the spatiotemporal distributions of prey and predators.
+</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig5"></span>
+<img src="imgs/Figure1.jpeg" alt="A conceptual model depicting putative relationships among foraging behavior, energetics, predation risk, and reproductive effort. The predicted relationships were derived from theoretical models of life-history evolution." width="500" />
+<p class="caption">
+Figure 2.1: A conceptual model depicting putative relationships among foraging behavior, energetics, predation risk, and reproductive effort. The predicted relationships were derived from theoretical models of life-history evolution.
+</p>
+</div>
+<p align="justify">
+Despite the wealth of conjecture, these hypothetical relationships among foraging mode and other traits have been assessed in only a handful of cases. Ideally, one would isolate each relationship and conduct experiments to quantify the evolution of traits in a controlled environment.<span class="citation"><sup>[84]</sup></span> However, such data are difficult to gather for many species and will probably remain rare. For instance, limited circumstantial evidence exists for the putative relationship between foraging mode and predation risk. Stomach contents of vipers suggested that widely-foraging species of lizards are more vulnerable to predators than sedentary species,<span class="citation"><sup>[72]</sup></span> but a number of confounding factors can explain this observation as well as foraging mode can. Alternatively, researchers have evaluated the relationship between mortality and life-history traits with no emphasis on foraging behavior. For example, experimental evolution with guppies and fruit flies revealed that genotypes that evolved in risky environments developed more rapidly, matured at a smaller size, and reproduced earlier in life than did genotypes that evolved in safe environments.<span class="citation"><sup>[2,85]</sup></span> From these results, we expect that a greater risk of predation among widely-foraging species selects for greater reproductive effort; however, given the scarce evidence, we cannot conclude whether foraging mode generally affects predation risk.
+<p align="justify">
+Here present the first evidence that the evolution of widely-foraging in lizards was associated with the evolution of greater reproductive effort, specifically among large-bodied species of lizards. This evidence comes from a comparative analysis of foraging mode and reproductive effort comprising 485 species of lizards from 32 families. In this analysis, we inferred the evolutionary history of foraging modes, complementing past reconstructions of ancestral states.<span class="citation"><sup>[86]</sup></span> In contrast to previous analyses, our study partially supports the prediction of theoretical models of the optimal reproductive effort, paving the way for ecologists to test mechanistic hypotheses at the intraspecific level.
+</p>
+</div>
+<div id="materials-and-methods-1" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Materials and Methods</h2>
+<p align="justify">
+We used published estimates of life history and foraging behavior for 485 species of lizards grouped in 32 families, excluding amphisbaenians and snakes. These data represent a subset of those assembled by ecologists from primary and secondary literatures.<span class="citation"><sup>[36]</sup></span> We defined reproductive effort as the mean product of offspring mass and offspring number. Accordingly, we computed the product of the mean scaled mass index for hatchlings or neonates, <span class="math inline">\(\hat M(g)\)</span>, and the mean clutch or litter size for each species of lizards. This product was interpreted in terms of reproductive effort after adjusting for the mass of the parent (i.e., the mean <span class="math inline">\(\hat M(g)\)</span> of adult females). The scaled mass index standardizes body mass at a given fixed value of a linear body measurement, based on the scaling relationship between mass and length.<span class="citation"><sup>[87]</sup></span> We first estimated hatchling mass and maternal mass from values of snout-vent-length (SVL) using published allometric equations.<span class="citation"><sup>[36,37,88]</sup></span> Then, we computed <span class="math inline">\(\hat M\)</span> as follows:
+</p>
+<p><span class="math display">\[\hat M=M_i(\frac{L_0}{L_i})^b_{SMA} \]</span></p>
+<p align="justify">
+where <span class="math inline">\(M_i\)</span> and <span class="math inline">\(L_i\)</span> are the raw body mass and the linear body measurement of individual <span class="math inline">\(i\)</span>, respectively; <span class="math inline">\(b_{SMA}\)</span> is the scaling exponent estimated by the standardized major-axis regression of <span class="math inline">\(ln(M)\)</span> on <span class="math inline">\(ln(L)\)</span>; <span class="math inline">\(L_0\)</span> is an arbitrary value of <span class="math inline">\(L\)</span> (e.g., the arithmetic mean of SVL values for the study species); and <span class="math inline">\(\hat M_i\)</span> is the predicted body mass for individual <span class="math inline">\(i\)</span> when the linear body measure is standardized to <span class="math inline">\(L_0\)</span>. The scaled mass index performs best as a predictor of variation of energy stores, such as fat as well as other body components.<span class="citation"><sup>[87]</sup></span> Given that we could not find clutch frequencies and ages of first reproduction for all of the widely-foraging and sit-and-wait species in this study, our analysis focused on reproductive effort in a single event rather than the lifetime reproductive effort, which corresponds to the total production of offspring over the lifetime of a female.
+</p>
+<p align="justify">
+Among species of lizards, widely foraging females and sit-and-wait females have been compared mostly in terms of their relative clutch mass. Relative clutch mass accounts for variation in energy availability among individuals by computing the ratio of reproductive mass to maternal mass, where mass is a proxy for energy. Although relative clutch mass is commonly used as measure of reproductive effort, regressing this index on female body mass for further analyses might be problematic, because ratios of random numbers regressed against their denominator will yield spurious correlations.<span class="citation"><sup>[89,90]</sup></span> By regressing the mean product of offspring mass and offspring number on maternal mass, the slope of the linear relationship can be interpreted as reproductive effort—proportion of mass allocated to reproduction at a given maternal mass—which enabled us to avoid statistical issues associated with the analysis of ratios.
+</p>
+<p align="justify">
+We defined the foraging mode of a species based on whether it has been reported as ambushing prey (sit-and-wait forager), searching for prey (widely foraging), or using a mixed strategy (mixed). Although this categorization seems somewhat artificial, most species of lizards clearly belong to one of these categories.<span class="citation"><sup>[69,72]</sup></span> We focused our analyses only on carnivores, because herbivores do not fit into the classical paradigm of foraging modes.<span class="citation"><sup>[91]</sup></span>
+</p>
+</div>
+<div id="statistical-analyses-1" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Statistical analyses</h2>
+<p align="justify">
+To determine the appropriate model of evolution, we used a set of continuous-time, discrete-state Markov-chain models to sample the character histories from their posterior probability distribution,<span class="citation"><sup>[92]</sup></span> and a time-calibrated phylogeny of squamate reptiles.<span class="citation"><sup>[45]</sup></span> We rooted the tree with the tuatara (<em>Sphenodon punctatus</em>) as the outgroup for our study taxa. Based on previous analyses, we coded this outgroup as a sit-and-wait species.<span class="citation"><sup>[91,93]</sup></span> However, we also performed the analysis with no outgroup to evaluate the consistency of our estimates. Additionally, we estimated phylogenetic signal (character dispersion on a phylogeny) using Fritz and Purvis’ <span class="math inline">\(D \ test\)</span>, available through the function <em>phylo.d</em> in the “caper” package of R, version 1.0.1.<span class="citation"><sup>[44,94,95]</sup></span>
+</p>
+<p align="justify">
+We used Phylogenetic Generalized Least Squares (PGLS) to model the relationship among maternal mass, foraging mode, and reproductive output. PGLS models enabled us to account for non-independence of the data.<span class="citation"><sup>[32,96]</sup></span> To do so, we used the <em>gls</em> function from the “nlme” package of R, version 3.1.153.<span class="citation"><sup>[44,97]</sup></span> We included maternal mass and foraging mode as independent variables and the mean product of hatchling mass and clutch size as the dependent variable. Then we fitted multiple models assuming that the species trait values evolved via a Brownian motion model, an Ornstein-Uhlenbeck motion model, and a Pagel’s lambda model using the R package “ape” version 5.6.2. To evaluate the models’ goodness of fit, we used information-theoretic criteria such as <span class="math inline">\(AIC_c\)</span>. We ranked candidate models accordingly and selected the most likely one (lowest value of AICc) for inferences. To control for variation in maternal size among species, we examined models in which maternal mass was standardized (<span class="math inline">\(\hat M\)</span>). This analysis enabled us to deal with outliers, thus increasing the robustness of our conclusions.
+</p>
+</div>
+<div id="results-1" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Results</h2>
+<p align="justify">
+The evolutionary transitions in foraging mode among species were best described by a model in which rates of evolution were equal among foraging modes, referred to as the equal-rates model (ER). According to the posterior probabilities from stochastic mapping, sit-and-wait foraging is the most likely ancestral state of all lacertilians (Figure <a href="#fig:fig6">2.2</a>). We drew this conclusion from the ancestral state reconstruction analysis including the outgroup (i.e. the tuatara) and with no outgroup. Sit-and-wait foraging evolved in two major clades of lizards; near the root of the tree, we found strong evidence suggesting that the ancestor of the basal gekkotans was likely a sit-and-wait predator. Likewise, the ancestor of the more derived iguanians was likely a sit-and-wait predator. During the Jurassic and middle Cretaceous, major transitions from sit-and-wait foraging to widely foraging seemed to have occurred in the ancestors of Scincoidea, Lacertoidea, and Anguimorpha. However, a major reverse transition from widely foraging to sit-and-wait foraging has also occurred during the Jurassic, in the ancestor of iguanians. The <span class="math inline">\(D\)</span> test for phylogenetic signal indicated that foraging mode is phylogenetically conserved among lizards (<span class="math inline">\(D=-0.14, \ p[D&lt;1]=0, \ p[D&gt;0]=0.80\)</span>). Accordingly, closely related species tend to exhibit the same foraging mode, but this similarity decreases as phylogenetic distant increases.
+</p>
+<p align="justify">
+The evolution of reproductive effort in lizards was driven by an interaction between maternal mass and foraging mode (Table <a href="#tab:tab1">2.1</a>). The information-theoretic approach revealed that a model including this interaction was strongly supported (Table <a href="#tab:tab2">2.2</a>). Widely foraging was associated with the evolution of greater reproductive effort than was sit-and-wait foraging, specifically in large-bodied species of lizards (Figure <a href="#fig:fig7">2.3</a>a). Yet, this difference seemed small when hatchling mass and maternal mass were standardized (Figure <a href="#fig:fig7">2.3</a>b). A model in which mass was standardized, <span class="math inline">\(\hat M\)</span>, suggested that species adopting a mixed-foraging strategy evolved the greatest reproductive effort (Figure <a href="#fig:fig7">2.3</a>b).
+</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tab1">Table 2.1: </span>Analysis of deviance table (Type III tests) for the most likely
+model, based on the ranking of <span class="math inline">\(AIC_c\)</span> for potential candidate models.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:right;">
+Df
+</th>
+<th style="text-align:right;">
+Chisq
+</th>
+<th style="text-align:right;">
+p.value
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+(Intercept)
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0.005
+</td>
+<td style="text-align:right;">
+0.942
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+M_females
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+4.761
+</td>
+<td style="text-align:right;">
+0.029
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+foraging.mode
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+10.372
+</td>
+<td style="text-align:right;">
+0.006
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+M_females:foraging.mode
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+18.105
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+</tr>
+</tbody>
+</table>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig6"></span>
+<img src="imgs/Figure2.jpeg" alt="Random sample of stochastic character maps depicting the evolution of foraging mode in 485 species of lizards. Bars at the tips of the phylogeny represent log-transformed values of reproductive effort for all lizards, but not the outgroup, *Sphenodon punctatus*. Pie charts on internal nodes represent posterior probability estimates resulting from 1,000 simulations of the character histories. Major clades are enumerated as follows: 1) Gekkota, 2) Scincoidea, 3) Lacertoidea, 4) Anguimorpha, 5) Toxicofera, and 6) Iguania. Lizard photos by Mark O’Shea." width="100%" />
+<p class="caption">
+Figure 2.2: Random sample of stochastic character maps depicting the evolution of foraging mode in 485 species of lizards. Bars at the tips of the phylogeny represent log-transformed values of reproductive effort for all lizards, but not the outgroup, <em>Sphenodon punctatus</em>. Pie charts on internal nodes represent posterior probability estimates resulting from 1,000 simulations of the character histories. Major clades are enumerated as follows: 1) Gekkota, 2) Scincoidea, 3) Lacertoidea, 4) Anguimorpha, 5) Toxicofera, and 6) Iguania. Lizard photos by Mark O’Shea.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig7"></span>
+<img src="imgs/Figure3.jpeg" alt="Effects of maternal mass and foraging mode on the evolution of reproductive effort of lizards, as determined by phylogenetic generalized least squares analysis. (a) Difference in reproductive effort among foraging modes assuming body mass as a proxy for energy. (b) Difference in reproductive effort among foraging modes assuming the scaled mass index as a proxy for energy." width="500" />
+<p class="caption">
+Figure 2.3: Effects of maternal mass and foraging mode on the evolution of reproductive effort of lizards, as determined by phylogenetic generalized least squares analysis. (a) Difference in reproductive effort among foraging modes assuming body mass as a proxy for energy. (b) Difference in reproductive effort among foraging modes assuming the scaled mass index as a proxy for energy.
+</p>
+</div>
+<p><br></p>
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tab2">Table 2.2: </span>Contrast of parameters estimated by the most likely model, according to the information-theoretic criteria of selection.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Model
+</th>
+<th style="text-align:right;">
+K
+</th>
+<th style="text-align:right;">
+logLik
+</th>
+<th style="text-align:right;">
+AICc
+</th>
+<th style="text-align:right;">
+delta
+</th>
+<th style="text-align:right;">
+weight
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+rep_out ~ M_females * foraging.mode
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+-1377.419
+</td>
+<td style="text-align:right;">
+2771.141
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+<td style="text-align:right;">
+0.999
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+rep_out ~ M_females + foraging.mode
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+-1386.401
+</td>
+<td style="text-align:right;">
+2784.977
+</td>
+<td style="text-align:right;">
+13.837
+</td>
+<td style="text-align:right;">
+0.001
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+rep_out ~ M_females * foraging.mode
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+-1434.910
+</td>
+<td style="text-align:right;">
+2884.055
+</td>
+<td style="text-align:right;">
+112.915
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+rep_out ~ M_females + foraging.mode
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+-1440.896
+</td>
+<td style="text-align:right;">
+2891.918
+</td>
+<td style="text-align:right;">
+120.777
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="discussion-1" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Discussion</h2>
+<p align="justify">
+Our analysis provides evidence that species of widely-foraging lizards have evolved greater reproductive effort, but only in heavier species (see Figure <a href="#fig:fig7">2.3</a>a). Presumably, this pattern stems from the ability of widely-foraging species to harvest and assimilate more resources than sit-and-wait species can. In the field, a widely-foraging lizard spends 32% more daily energy than a sit-and-wait lizard, but this extra energy expenditure is probably paid off with greater daily food consumption.<span class="citation"><sup>[98]</sup></span> The ability of widely-foraging lizards to forage more efficiently should reduce their risk of predation. Rapid growth by widely-foraging lizards might also cause them to outgrow the gape limitations of predators.<span class="citation"><sup>[99,100]</sup></span> Therefore, if body size is critical to outperform predators and outcompete conspecifics, the optimal pattern may be to grow to the maximal size that leads to the greatest reproductive effort.
+</p>
+<p align="justify">
+Our study presents the first evidence that the early shift in foraging mode—from sit-and-wait foraging to widely foraging—in the evolutionary history of lacertilians was likely accompanied by the evolution of a greater reproductive effort, specifically in large-bodied species of lizards (Figure <a href="#fig:fig6">2.2</a>). Yet, much variation in reproductive effort exits among species with the same foraging mode, such that ecologists must consider other factors that influence reproduction. Importantly, our study captured the effects of foraging plasticity on the reproductive effort of lizards. For instance, lizards that adopt a mixed-foraging strategy produced the greatest reproductive effort. Hopefully, our findings encourages others to investigate how foraging efficiency and predation risk associated with foraging modes influence the evolution of reproductive traits.
+</p>
+</div>
+</div>
+<div id="chapter-foraging-efficiency-of-rover-and-sitter-larvae-of-drosophila-melanogaster" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Chapter: Foraging efficiency of rover and sitter larvae of <em>Drosophila melanogaster</em></h1>
+<div id="introduction-2" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Introduction</h2>
+<p align="justify">
+In the previous chapter, we presented the first evidence that widely foraging species of lizards actually have greater reproductive effort than sit-and wait species, which we attributed to a greater rates of energy acquisition and mortality among mobile foragers. Thus, our work refutes the traditional view, calling into question long-standing predictions of the foraging-mode paradigm. In this chapter of my dissertation, I will pursue this area of research with an experimental approach involving the larvae of the fruit fly <em>Drosophila melanogaster</em>.
+</p>
+<p align="justify">
+Currently, analyses of the efficiency of foraging behaviors stem from measures of a few species in short periods of a season. Studies of this nature in laboratory-controlled conditions are still rare in the current literature, revealing the need for long-term studies to help us understand the evolution of foraging behavior and its connection to the life history. In <em>Drosophila melanogaster</em>, a foraging gene (<em>for</em>) is a well-established example of a gene with major effects on foraging behavior.<span class="citation"><sup>[101]</sup></span> This gene is best known for underlying the foraging behavior strategies of rover (“active foragers”) and sitter (“passive foragers”) foraging larvae, making this organism a good study system to test the relationship between foraging behavior and energy acquisition.
+</p>
+<p align="justify">
+The foraging efficiency of the <em>Drosophila</em> larvae can be examined based on the model shown below. Assuming same daily and seasonal activity durations among larvae, this model suggests that the total energy accumulated for growth (<span class="math inline">\(m\)</span>) depends on the time spent foraging (<span class="math inline">\(t\)</span>). Thus, the ratio of the energy accumulated for growth to the time spent foraging (<span class="math inline">\(\frac{m}{t}\)</span>) corresponds to the foraging efficiency of a larva. If two larvae have the same foraging efficiency, the smaller one would reach its maximum growth capacity at a lower value of <span class="math inline">\(m\)</span> (Figure <a href="#fig:fig8">3.1</a>a). However, if a rover larva has a higher foraging efficiency, it might grow faster and reach maturity at a smaller size than would a sitter larva that is less efficient at foraging (Figure <a href="#fig:fig8">3.1</a>b).
+</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig8"></span>
+<img src="prospectus-DP_files/figure-html/fig8-1.png" alt="A theoretical model relating the cumulative energy gain $m$, as a function of time spent foraging, $t$. (a) Larger larvae reach their maximum capacity at a higher value of $m$ than small larvae. (b) Rovers that are smaller but more efficient foragers may grow faster at a smaller size than larger and less efficient sitter larvae. $t_{r}$ and $t_{s}$ in (b) represent the optimal foraging time of rover and sitter, respectively." width="2100" />
+<p class="caption">
+Figure 3.1: A theoretical model relating the cumulative energy gain <span class="math inline">\(m\)</span>, as a function of time spent foraging, <span class="math inline">\(t\)</span>. (a) Larger larvae reach their maximum capacity at a higher value of <span class="math inline">\(m\)</span> than small larvae. (b) Rovers that are smaller but more efficient foragers may grow faster at a smaller size than larger and less efficient sitter larvae. <span class="math inline">\(t_{r}\)</span> and <span class="math inline">\(t_{s}\)</span> in (b) represent the optimal foraging time of rover and sitter, respectively.
+</p>
+</div>
+</div>
+<div id="experimental-design" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Experimental design</h2>
+<p align="justify">
+The rover (<span class="math inline">\(for^R\)</span>) and sitter (<span class="math inline">\(for^S\)</span>) strains that we will use in our study have been provided by the Sokolowski lab at the University of Toronto, Canada. Flies of both strains will be separately reared on a mixture of cornmeal, corn syrup, and yeast-agar culture bottles incubated at 25<span class="math inline">\(^\circ\)</span>C and 60% relative humidity in a 12:12 h LD cycle. To set up the parental populations of each strain, we will collect 100-150 females and 50-75 males and age them for 5 days for optimal fecundity.<span class="citation"><sup>[102]</sup></span> We will allow them to mate overnight in a 6 oz culture bottle with standard food. The flies will be transferred to a culture bottle oriented upside down and sealed up with a grape plate at the bottom. By doing this, we will allow the adults to lay eggs on the grape plate. We will discard the first grape plate after 24 h and place a new grape plate in the bottle oppening. This will be the grape plate from which larvae will be collected the next day.
+</p>
+<p align="justify">
+The experimental set up will begin with a petri dish covered with a thin layer of agar matrix. The agar layer should be thin enough to enable us to observe a path that a moving larva would leave as it forages. Because the larvae actually feed on yeast, we will add small drops of yeast paste on the agar matrix in such a way that some petri dish will have drops of yeast uniformly distributed (Figure <a href="#fig:fig9">3.2</a>), and others will have the drops distributed in patches (Figure <a href="#fig:fig10">3.3</a>). Manipulating the distribution of yeast on the petri dish will enable us to examine the foraging efficiency of a larva when the distribution of food varies in the environment they are placed on. We will cover the test dish with a transparent lid for the larvae to remain visible during the duration of the experiments.
+</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig9"></span>
+<img src="prospectus-DP_files/figure-html/fig9-1.png" alt="Hypothetical environment in which food is uniformly distributed." width="80%" />
+<p class="caption">
+Figure 3.2: Hypothetical environment in which food is uniformly distributed.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig10"></span>
+<img src="prospectus-DP_files/figure-html/fig10-1.png" alt="Hypothetical environment in which food is scarce and distributed in patches." width="80%" />
+<p class="caption">
+Figure 3.3: Hypothetical environment in which food is scarce and distributed in patches.
+</p>
+</div>
+<p align="justify">
+Before the beggining of the experiments, a third instar larva will be first weighed on a precision scale and then it will be inmediately transferred to the center of the test dish using a paintbrush. After covering the test dish with the transparent lid, we will record the foraging behavior of the larva using a camera placed 30 cm obove the test dish. The recording will be stopped after 24 h, and the larva will be weighed once again. The difference between the final mass and the initial mass of the larva per 24 h of experiment will be our measure of foraging efficiency. The strain of the larva and the type of environment will be randomized for each trial. All larvae will be assessed at the same temperature and relative humidity.
+</p>
+<p align="justify">
+The experimetal design described above consists of a <span class="math inline">\(2^2\)</span> factorial design. The dependent variable will be the foraging efficiency, and the independent variables will be the larval strain and type of environment. A two-factor Analysis of Variance represents an ideal linear model to analyze the data produced by the experiments.
+</p>
+</div>
+<div id="prediction" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Prediction</h2>
+<p align="justify">
+We predict two possible outcomes: assuming that rover larvae have a better ability to gather more food as they forage than sitter larvae do, the former would be more efficient foragers in a patchy environment (Figure <a href="#fig:fig11">3.4</a>). However, if food is readily available in the environment, rovers and sitters would have the same foraging efficiency (Figure <a href="#fig:fig11">3.4</a>).
+</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig11"></span>
+<img src="prospectus-DP_files/figure-html/fig11-1.png" alt="Prediction of the study." width="92%" />
+<p class="caption">
+Figure 3.4: Prediction of the study.
+</p>
+</div>
+</div>
+</div>
+<div id="chapter-the-evolution-of-foraging-polymorphism-in-drosophila-melanogaster" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Chapter: The evolution of foraging polymorphism in <em>Drosophila melanogaster</em></h1>
+<div id="introduction-3" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Introduction</h2>
+<p align="justify">
+Despite advances on the mechanistic basis of rover/sitter differences, the evolutionary significance and maintainance of the polymorphism are yet to be investigated in depth. Some evidence suggest that density-dependent selection during the larval stage of <em>Drosophila</em>, rather than the adult stage of development, is sufficient to maintain variation in rover and sitter behavior in laboratory populations.<span class="citation"><sup>[103,104]</sup></span> However, little is known about how the frequency of the <em>for</em> alleles varies in the wild, especially during the adult stage of the fruit fly.
+</p>
+<p align="justify">
+The study of the mehcanisms that influence genetic variation in natural populations is fundamental to understand the process of evolution. With the development of population genomics, we can now analyze patterns of genome-wide genetic variation for large numbers of individuals, with samples structured across space and time (Figure <a href="#fig:fig12">4.1</a>). As more data have become available, we have the opportunity to provide new insights into the evolutionary dynamics of the <em>for</em> alleles in natural populations.
+</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig12"></span>
+<img src="imgs/map-drosophila.png" alt="Available data of genome-wide allele frequency estimates from &gt;270 population based samples of *D. melanogaster* worldwide. DGN: samples available from the Drosophila Genome Nexus project; DrosEU: samples collected by the European Drosophila Population Genomics Consortium; DrosRTEC: samples collected by the Real Time Evolution Consortium." width="100%" />
+<p class="caption">
+Figure 4.1: Available data of genome-wide allele frequency estimates from &gt;270 population based samples of <em>D. melanogaster</em> worldwide. DGN: samples available from the Drosophila Genome Nexus project; DrosEU: samples collected by the European Drosophila Population Genomics Consortium; DrosRTEC: samples collected by the Real Time Evolution Consortium.
+</p>
+</div>
+<p align="justify">
+The goal of this chapter is to examine the potential variation in the frequency of the <em>for</em> alleles in space and time. To do this, we will use published genomes of adult flies collected in the wild. Because several populations of <em>D. melanogaster</em> have been sampled worldwide, and at least twice per site of collection (during summer and fall), not only can we test wether the allele frequencies change geographically, but also in response to seasonality.
+</p>
+</div>
+<div id="materials-and-methods-2" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Materials and Methods</h2>
+<p align="justify">
+<strong>Step 1</strong>: We will use published whole-genome sequences together with a meta-data file provided by the <a href="%22https://dest.bio/%22">Drosophila Evolution over Space and Time publish repository</a>. The meta-data file includes collection information, library quality filtering, inversion frequencies, weather stations, and WorldClim environmental data. This dataset represents the most comprehensive spatiotemporal sampling of <em>D. melanogaster</em> populations to date. Because most of the data available consist of pooled-samples of <span class="math inline">\(\approx40\)</span> male adult flies, we will use the raw reads from the samples and align them to the <em>D. melanogaster</em> reference genome, accesion no. <a href="%22https://www.ncbi.nlm.nih.gov/data-hub/genome/GCF_000001215.4/%22">GCA_000001215.4</a>. Subsequently, we will use the Basic Local Alignment Search Tool (BLAST) to find regions of local similarity between the rover/sitter sequences available in the GenBank database; accession no. <a href="%22https://www.ncbi.nlm.nih.gov/nuccore/CP023329%22">CP023329–CP023334</a> (sitter), <a href="%22https://www.ncbi.nlm.nih.gov/nuccore/CP023335%22">CP023335–CP023340</a> (rover), and the genomes aligned from the samples collected in the wild. BLAST can be used to infer functional and evolutionary relationships between sequences as well as help identify alleles of a gene based on characteristic SNPs. Adults rovers and sitters differ in one SNP in a 0.1-kb region upstream of the pr4 transcription start site, in which rovers contain an adenine and sitters a cytosine. Targeting this specific SNP enables us to distinguish which allele is present in a given genome. Accordingly, we can use this information to compute the frequency of rovers and sitters per collection site and season.
+</p>
+<p align="justify">
+<strong>Step 2</strong>: In addition to estimating the allele frequencies from natural populations around the world, we will also conduct an experimental evolution study with populations of adult flies reared in the laboratory. In experimental evolution, we can force selection to act on the <em>foraging</em> gene under environmental regimes of interest. For example, we could manipulate specific variables such as temperature and LD cycle to simulate the conditions that the flies would experience in a particular latitude/longitude and season. An experimental design of this kind enables us to test potential links between the foraging polymorphism and environmental conditions. In sum, we could start from a known gene pool that is polymorphic at the focal <em>for</em> locus and then measure the response in terms of changes in allele frequency at different conditions of temperature and LD cycle. By doing this, we can better understand the mechanisms underlying the polymorphism observed in natural populations.
+</p>
+</body>
+</div>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-roff2002life" class="csl-entry">
+1. Roff, D. A. (2002). <em>Life history evolution</em>. Sinauer Associates Inc., Sunderland.
+</div>
+<div id="ref-stearns1992evolution" class="csl-entry">
+2. Stearns, S. C., Stearns, S. C., &amp; Press, O. U. (1992). <em>The evolution of life histories</em>. OUP Oxford. <a href="https://books.google.com/books?id=-NcNAZ06nNoC">https://books.google.com/books?id=-NcNAZ06nNoC</a>
+</div>
+<div id="ref-smith1974optimal" class="csl-entry">
+3. Smith, C. C., &amp; Fretwell, S. D. (1974). The optimal balance between size and number of offspring. <em>The American Naturalist</em>, <em>108</em>(962), 499–506.
+</div>
+<div id="ref-de1992acquisition" class="csl-entry">
+4. De Jong, G., &amp; Van Noordwijk, A. (1992). Acquisition and allocation of resources: Genetic (co) variances, selection, and life histories. <em>The American Naturalist</em>, <em>139</em>(4), 749–770.
+</div>
+<div id="ref-van1986acquisition" class="csl-entry">
+5. Van Noordwijk, A. J., &amp; Jong, G. de. (1986). Acquisition and allocation of resources: Their influence on variation in life history tactics. <em>The American Naturalist</em>, <em>128</em>(1), 137–142.
+</div>
+<div id="ref-parker1986optimal" class="csl-entry">
+6. Parker, G. A., &amp; Begon, M. (1986). Optimal egg size and clutch size: Effects of environment and maternal phenotype. <em>The American Naturalist</em>, <em>128</em>(4), 573–592.
+</div>
+<div id="ref-congdon1987morphological" class="csl-entry">
+7. Congdon, J. D., &amp; Gibbons, J. W. (1987). Morphological constraint on egg size: A challenge to optimal egg size theory? <em>Proceedings of the National Academy of Sciences</em>, <em>84</em>(12), 4145–4147.
+</div>
+<div id="ref-du2005does" class="csl-entry">
+8. Du, W., Ji, X., &amp; Shine, R. (2005). Does body-volume constrain reproductive output in lizards? <em>Biology Letters</em>, <em>1</em>(1), 98–100.
+</div>
+<div id="ref-shine1992relative" class="csl-entry">
+9. Shine, R. (1992). Relative clutch mass and body shape in lizards and snakes: Is reproductive investment constrained or optimized? <em>Evolution</em>, <em>46</em>, 828–833.
+</div>
+<div id="ref-sinervo1991proximate" class="csl-entry">
+10. Sinervo, B., &amp; Licht, P. (1991). Proximate constraints on the evolution of egg size, number, and total clutch mass in lizards. <em>Science</em>, <em>252</em>(5010), 1300–1302.
+</div>
+<div id="ref-vitt1978body" class="csl-entry">
+11. Vitt, L. J., &amp; Congdon, J. D. (1978). Body shape, reproductive effort, and relative clutch mass in lizards: Resolution of a paradox. <em>The American Naturalist</em>, <em>112</em>(985), 595–608.
+</div>
+<div id="ref-oufiero2007importance" class="csl-entry">
+12. Oufiero, C. E., Smith, A. J., &amp; Angilletta, M. J. (2007). The importance of energetic versus pelvic constraints on reproductive allocation by the eastern fence lizard (<em>sceloporus undulatus</em>). <em>Biological Journal of the Linnean Society</em>, <em>91</em>(3), 513–521.
+</div>
+<div id="ref-atkinson1994temperature" class="csl-entry">
+13. Atkinson, D. (1994). Temperature and organism size: A biological law for ectotherms? <em>Adv Ecol Res</em>, <em>25</em>, 1–58.
+</div>
+<div id="ref-atkinson1995effects" class="csl-entry">
+14. Atkinson, D. (1995). Effects of temperature on the size of aquatic ectotherms: Exceptions to the general rule. <em>Journal of Thermal Biology</em>, <em>20</em>(1-2), 61–74.
+</div>
+<div id="ref-atkinson1997organisms" class="csl-entry">
+15. Atkinson, D., &amp; Sibly, R. M. (1997). Why are organisms usually bigger in colder environments? Making sense of a life history puzzle. <em>Trends in Ecology &amp; Evolution</em>, <em>12</em>(6), 235–239.
+</div>
+<div id="ref-ashton2002amphibians" class="csl-entry">
+16. Ashton, K. G. (2002). Do amphibians follow bergmann’s rule? <em>Canadian Journal of Zoology</em>, <em>80</em>(4), 708–716.
+</div>
+<div id="ref-berrigan1994reaction" class="csl-entry">
+17. Berrigan, D., &amp; Charnov, E. L. (1994). Reaction norms for age and size at maturity in response to temperature: A puzzle for life historians. <em>Oikos</em>, <em>80</em>(4), 474–478.
+</div>
+<div id="ref-sibly1994rearing" class="csl-entry">
+18. Sibly, R., &amp; Atkinson, D. (1994). How rearing temperature affects optimal adult size in ectotherms. <em>Functional Ecology</em>, 486–493.
+</div>
+<div id="ref-ashton2000bergmann" class="csl-entry">
+19. Ashton, K. G., Tracy, M. C., &amp; Queiroz, A. de. (2000). Is bergmann’s rule valid for mammals? <em>The American Naturalist</em>, <em>156</em>(4), 390–415.
+</div>
+<div id="ref-bergmann1848verhaltnisse" class="csl-entry">
+20. Bergmann, C. (1848). <em><span>Ü</span>ber die verh<span>ä</span>ltnisse der w<span>ä</span>rme<span>ö</span>konomie der thiere zu ihrer gr<span>ö</span>sse</em>.
+</div>
+<div id="ref-yom2006geographic" class="csl-entry">
+21. Yom-Tov, Y., &amp; Geffen, E. (2006). Geographic variation in body size: The effects of ambient temperature and precipitation. <em>Oecologia</em>, <em>148</em>(2), 213–218.
+</div>
+<div id="ref-mcnab2010geographic" class="csl-entry">
+22. McNab, B. K. (2010). Geographic and temporal correlations of mammalian size reconsidered: A resource rule. <em>Oecologia</em>, <em>164</em>(1), 13–23.
+</div>
+<div id="ref-cramer1999comparing" class="csl-entry">
+23. Cramer W., B. A., Kicklighter D. W., &amp; Potsdam NPP Model Intercomparison, T. P. of the. (1999). Comparing global models of terrestrial net primary productivity (NPP): Overview and key results. <em>Global Change Biology</em>, <em>5</em>(S1), 1–15.
+</div>
+<div id="ref-bonnet2001short" class="csl-entry">
+24. Bonnet, X., Naulleau, G., Shine, R., &amp; Lourdais, O. (2001). Short-term versus long-term effects of food intake on reproductive output in a viviparous snake, <em>vipera aspis</em>. <em>Oikos</em>, <em>92</em>(2), 297–308.
+</div>
+<div id="ref-hahn1965fat" class="csl-entry">
+25. Hahn, W. E., &amp; Tinkle, D. W. (1965). Fat body cycling and experimental evidence for its adaptive significance to ovarian follicle development in the lizard <em>uta stansburiana</em>. <em>Journal of Experimental Zoology</em>, <em>158</em>(1), 79–85.
+</div>
+<div id="ref-marshall2018global" class="csl-entry">
+26. Marshall, D. J., Pettersen, A. K., &amp; Cameron, H. (2018). A global synthesis of offspring size variation, its eco-evolutionary causes and consequences. <em>Functional Ecology</em>, <em>32</em>(6), 1436–1446.
+</div>
+<div id="ref-kouyoumdjian2019transplanting" class="csl-entry">
+27. Kouyoumdjian, L., Gangloff, E. J., Souchet, J., Cordero, G. A., Dupoué, A., &amp; Aubret, F. (2019). Transplanting gravid lizards to high elevation alters maternal and embryonic oxygen physiology, but not reproductive success or hatchling phenotype. <em>Journal of Experimental Biology</em>, <em>222</em>(14), jeb206839.
+</div>
+<div id="ref-meiri2012ecology" class="csl-entry">
+28. Meiri, S., Brown, J. H., &amp; Sibly, R. M. (2012). The ecology of lizard reproductive output. <em>Global Ecology and Biogeography</em>, <em>21</em>(5), 592–602.
+</div>
+<div id="ref-le2020influence" class="csl-entry">
+29. Le Gouvello, D. Z., Nel, R., &amp; Cloete, A. E. (2020). The influence of individual size on clutch size and hatchling fitness traits in sea turtles. <em>Journal of Experimental Marine Biology and Ecology</em>, <em>527</em>, 151372.
+</div>
+<div id="ref-warner2008maternal" class="csl-entry">
+30. Warner, D. A., &amp; Shine, R. (2008). Maternal nest-site choice in a lizard with temperature-dependent sex determination. <em>Animal Behaviour</em>, <em>75</em>(3), 861–870.
+</div>
+<div id="ref-vitt1982ecological" class="csl-entry">
+31. Vitt, L. J., &amp; Price, H. J. (1982). Ecological and evolutionary determinants of relative clutch mass in lizards. <em>Herpetologica</em>, 237–255.
+</div>
+<div id="ref-felsenstein1985phylogenies" class="csl-entry">
+32. Felsenstein, J. (1985). Phylogenies and the comparative method. <em>The American Naturalist</em>, <em>125</em>(1), 1–15.
+</div>
+<div id="ref-mesquita2016life" class="csl-entry">
+33. Mesquita, D. O., Costa, G. C., Colli, G. R., Costa, T. B., Shepard, D. B., Vitt, L. J., &amp; Pianka, E. R. (2016). Life-history patterns of lizards of the world. <em>The American Naturalist</em>, <em>187</em>(6), 689–705.
+</div>
+<div id="ref-angilletta2006direct" class="csl-entry">
+34. Angilletta, M. J., Oufiero, C. E., &amp; Leaché, A. D. (2006). Direct and indirect effects of environmental temperature on the evolution of reproductive strategies: An information-theoretic approach. <em>The American Naturalist</em>, <em>168</em>(4), 123–135.
+</div>
+<div id="ref-meiri2008evolution" class="csl-entry">
+35. Meiri, S. (2008). Evolution and ecology of lizard body sizes. <em>Global Ecology and Biogeography</em>, <em>17</em>(6), 724–734.
+</div>
+<div id="ref-meiri2018traits" class="csl-entry">
+36. Meiri, S. (2018). Traits of lizards of the world: Variation around a successful evolutionary design. <em>Global Ecology and Biogeography</em>, <em>27</em>(10), 1168–1172.
+</div>
+<div id="ref-meiri2015squamate" class="csl-entry">
+37. Meiri, S., Feldman, A., &amp; Kratochvı́l, L. (2015). Squamate hatchling size and the evolutionary causes of negative offspring size allometry. <em>Journal of Evolutionary Biology</em>, <em>28</em>(2), 438–446.
+</div>
+<div id="ref-warne2008reproductive" class="csl-entry">
+38. Warne, R. W., &amp; Charnov, E. L. (2008). Reproductive allometry and the size-number trade-off for lizards. <em>The American Naturalist</em>, <em>172</em>(3), 80–98.
+</div>
+<div id="ref-deeming2004reptilian" class="csl-entry">
+39. Deeming, D. C.others. (2004). <em>Reptilian incubation: Environment, evolution and behaviour.</em> Nottingham University Press.
+</div>
+<div id="ref-roll2017global" class="csl-entry">
+40. Roll, U., Feldman, A., Novosolov, M., Allison, A., Bauer, A. M., Bernard, R., Böhm, M., Castro-Herrera, F., Chirio, L., Collen, B.others. (2017). The global distribution of tetrapods reveals a need for targeted reptile conservation. <em>Nature Ecology &amp; Evolution</em>, <em>1</em>(11), 1677–1682.
+</div>
+<div id="ref-fick2017worldclim" class="csl-entry">
+41. Fick, S. E., &amp; Hijmans, R. J. (2017). WorldClim 2: New 1-km spatial resolution climate surfaces for global land areas. <em>International Journal of Climatology</em>, <em>37</em>(12), 4302–4315.
+</div>
+<div id="ref-imhoff2004global" class="csl-entry">
+42. Imhoff, M. L., Bounoua, L., Ricketts, T., Loucks, C., Harriss, R., &amp; Lawrence, W. T. (2004). Global patterns in human consumption of net primary production. <em>Nature</em>, <em>429</em>(6994), 870–873.
+</div>
+<div id="ref-van2018phylopath" class="csl-entry">
+43. Bijl, W. van der. (2018). Phylopath: Easy phylogenetic path analysis in r. <em>PeerJ</em>, <em>6</em>, e4718.
+</div>
+<div id="ref-team2013r" class="csl-entry">
+44. Team, R. C.others. (2013). <em>R: A language and environment for statistical computing</em>.
+</div>
+<div id="ref-zheng2016combining" class="csl-entry">
+45. Zheng, Y., &amp; Wiens, J. J. (2016). Combining phylogenomic and supermatrix approaches, and a time-calibrated phylogeny for squamate reptiles (lizards and snakes) based on 52 genes and 4162 species. <em>Molecular Phylogenetics and Evolution</em>, <em>94</em>, 537–547.
+</div>
+<div id="ref-shipley2000new" class="csl-entry">
+46. Shipley, B. (2000). A new inferential test for path models based on directed acyclic graphs. <em>Structural Equation Modeling</em>, <em>7</em>(2), 206–218.
+</div>
+<div id="ref-shipley2013compared" class="csl-entry">
+47. Shipley, B. (2013). Compared using a d-separation test reports. <em>Ecology</em>, <em>94</em>(3), 560–564.
+</div>
+<div id="ref-hardenberg2013disentangling" class="csl-entry">
+48. Hardenberg, A. von, &amp; Gonzalez-Voyer, A. (2013). Disentangling evolutionary cause-effect relationships with phylogenetic confirmatory path analysis. <em>Evolution: International Journal of Organic Evolution</em>, <em>67</em>(2), 378–387.
+</div>
+<div id="ref-burnham2002practical" class="csl-entry">
+49. Burnham, K. P., &amp; Anderson, D. R. (2002). A practical information-theoretic approach. <em>Model Selection and Multimodel Inference</em>, <em>2</em>, 70–71.
+</div>
+<div id="ref-nevo1973adaptive" class="csl-entry">
+50. Nevo, E. (1973). Adaptive variation in size of cricket frogs. <em>Ecology</em>, <em>54</em>(6), 1271–1281.
+</div>
+<div id="ref-olalla2009geographic" class="csl-entry">
+51. Olalla-Tárraga, M. Á., Diniz-Filho, J. A. F., Bastos, R. P., &amp; Rodrı́guez, M. Á. (2009). Geographic body size gradients in tropical regions: Water deficit and anuran body size in the brazilian cerrado. <em>Ecography</em>, <em>32</em>(4), 581–590.
+</div>
+<div id="ref-gouveia2016geographical" class="csl-entry">
+52. Gouveia, S. F., &amp; Correia, I. (2016). Geographical clines of body size in terrestrial amphibians: Water conservation hypothesis revisited. <em>Journal of Biogeography</em>, <em>43</em>(10), 2075–2084.
+</div>
+<div id="ref-pincheira2008evolution" class="csl-entry">
+53. Pincheira-Donoso, D., Hodgson, D. J., &amp; Tregenza, T. (2008). The evolution of body size under environmental gradients in ectotherms: Why should bergmann’s rule apply to lizards? <em>BMC Evolutionary Biology</em>, <em>8</em>(1), 1–13.
+</div>
+<div id="ref-huey2003behavioral" class="csl-entry">
+54. Huey, R. B., Hertz, P. E., &amp; Sinervo, B. (2003). Behavioral drive versus behavioral inertia in evolution: A null model approach. <em>The American Naturalist</em>, <em>161</em>(3), 357–366.
+</div>
+<div id="ref-bogert1949thermoregulation" class="csl-entry">
+55. Bogert, C. M. (1949). Thermoregulation in reptiles, a factor in evolution. <em>Evolution</em>, <em>3</em>(3), 195–211.
+</div>
+<div id="ref-buckley2015thermoregulatory" class="csl-entry">
+56. Buckley, L. B., Ehrenberger, J. C., &amp; Angilletta, M. J. (2015). Thermoregulatory behaviour limits local adaptation of thermal niches and confers sensitivity to climate change. <em>Functional Ecology</em>, <em>29</em>(8), 1038–1047.
+</div>
+<div id="ref-van1990evolutionary" class="csl-entry">
+57. Van Damme, R., Bauwens, D., &amp; Verheyen, R. F. (1990). Evolutionary rigidity of thermal physiology: The case of the cool temperate lizard <em>lacerta vivipara</em>. <em>Oikos</em>, <em>57</em>(1), 61–67.
+</div>
+<div id="ref-cruz2009thermal" class="csl-entry">
+58. Cruz, F. B., Belver, L., Acosta, J. C., Villavicencio, H. J., Blanco, G., &amp; Cánovas, M. G. (2009). Thermal biology of phymaturus lizards: Evolutionary constraints or lack of environmental variation? <em>Zoology</em>, <em>112</em>(6), 425–432.
+</div>
+<div id="ref-sunday2011global" class="csl-entry">
+59. Sunday, J. M., Bates, A. E., &amp; Dulvy, N. K. (2011). Global analysis of thermal tolerance and latitude in ectotherms. <em>Proceedings of the Royal Society B: Biological Sciences</em>, <em>278</em>(1713), 1823–1830.
+</div>
+<div id="ref-huey1982temperature" class="csl-entry">
+60. Huey, R. B. (1982). Temperature, physiology, and the ecology of reptiles. <em>Biology of the Reptilia</em>.
+</div>
+<div id="ref-adolph1990influence" class="csl-entry">
+61. Adolph, S. C. (1990). Influence of behavioral thermoregulation on microhabitat use by two sceloporus lizards. <em>Ecology</em>, <em>71</em>(1), 315–327.
+</div>
+<div id="ref-rand1964ecological" class="csl-entry">
+62. Rand, A. S. (1964). Ecological distribution in anoline lizards of puerto rico. <em>Ecology</em>, <em>45</em>(4), 745–752.
+</div>
+<div id="ref-huey1987phylogenetic" class="csl-entry">
+63. Huey, R. B., &amp; Bennett, A. F. (1987). Phylogenetic studies of coadaptation: Preferred temperatures versus optimal performance temperatures of lizards. <em>Evolution</em>, <em>41</em>(5), 1098–1115.
+</div>
+<div id="ref-bauwens1995evolution" class="csl-entry">
+64. Bauwens, D., Garland Jr, T., Castilla, A. M., &amp; Van Damme, R. (1995). Evolution of sprint speed in lacertid lizards: Morphological, physiological, and behavioral covariation. <em>Evolution</em>, <em>49</em>(5), 848–863.
+</div>
+<div id="ref-huey1993evolution" class="csl-entry">
+65. Huey, R. B., &amp; Kingsolver, J. G. (1993). Evolution of resistance to high temperature in ectotherms. <em>The American Naturalist</em>, <em>142</em>, 21–46.
+</div>
+<div id="ref-angilletta2009thermal" class="csl-entry">
+66. Angilletta, M. J. (2009). <em>Thermal adaptation: A theoretical and empirical synthesis</em>. Oxford University Press, USA.
+</div>
+<div id="ref-partridge1996thermal" class="csl-entry">
+67. Partridge, L., &amp; French, V. (1996). Thermal evolution of ectotherm body size: Why get big in the cold? <em>Seminar Series-Society for Experimetal Biology</em>, <em>59</em>, 265–292.
+</div>
+<div id="ref-pianka1966convexity" class="csl-entry">
+68. Pianka, E. R. (1966). Convexity, desert lizards, and spatial heterogeneity. <em>Ecology</em>, <em>47</em>(6), 1055–1059.
+</div>
+<div id="ref-perry1999evolution" class="csl-entry">
+69. Perry, G. (1999). The evolution of search modes: Ecological versus phylogenetic perspectives. <em>The American Naturalist</em>, <em>153</em>(1), 98–109.
+</div>
+<div id="ref-webb2003does" class="csl-entry">
+70. Webb, J. K., Brook, B. W., &amp; Shine, R. (2003). Does foraging mode influence life history traits? A comparative study of growth, maturation and survival of two species of sympatric snakes from south-eastern australia. <em>Austral Ecology</em>, <em>28</em>(6), 601–610.
+</div>
+<div id="ref-dunham1988life" class="csl-entry">
+71. Dunham, A., Miles, D., &amp; Reznick, D. (1988). Life history patterns in squamate reptiles, s. 441-522.[in:] Gans, c. <em>Huey, RB: Biology of the Reptilia</em>, <em>16</em>.
+</div>
+<div id="ref-huey1981ecological" class="csl-entry">
+72. Huey, R. B., &amp; Pianka, E. R. (1981). Ecological consequences of foraging mode. <em>Ecology</em>, <em>62</em>(4), 991–999.
+</div>
+<div id="ref-anderson1988energetics" class="csl-entry">
+73. Anderson, R. A., &amp; Karasov, W. H. (1988). Energetics of the lizard <em>cnemidophorus tigris</em> and life history consequences of food-acquisition mode. <em>Ecological Monographs</em>, <em>58</em>(2), 79–110.
+</div>
+<div id="ref-anderson1981contrasts" class="csl-entry">
+74. Anderson, R., &amp; Karasov, W. (1981). Contrasts in energy intake and expenditure in sit-and-wait and widely foraging lizards. <em>Oecologia</em>, <em>49</em>(1), 67–72.
+</div>
+<div id="ref-nagy1984field" class="csl-entry">
+75. Nagy, K. A., Huey, R. B., &amp; Bennett, A. F. (1984). Field energetics and foraging mode of kalahari lacertid lizards. <em>Ecology</em>, <em>65</em>(2), 588–596.
+</div>
+<div id="ref-bury2021energy" class="csl-entry">
+76. Bury, S. (2021). Energy expenses on prey processing are comparable, but paid at a higher metabolic scope and for a longer time in ambush vs active predators: A multispecies study on snakes. <em>Oecologia</em>, <em>197</em>(1), 61–70.
+</div>
+<div id="ref-stuginski2018phylogenetic" class="csl-entry">
+77. Stuginski, D. R., Navas, C. A., Barros, F. C. de, Camacho, A., Bicudo, J. E. P. W., Grego, K. F., &amp; De Carvalho, J. E. (2018). Phylogenetic analysis of standard metabolic rate of snakes: A new proposal for the understanding of interspecific variation in feeding behavior. <em>Journal of Comparative Physiology B</em>, <em>188</em>(2), 315–323.
+</div>
+<div id="ref-glaudas2019foraging" class="csl-entry">
+78. Glaudas, X., Glennon, K. L., Martins, M., Luiselli, L., Fearn, S., Trembath, D. F., Jelić, D., &amp; Alexander, G. J. (2019). Foraging mode, relative prey size and diet breadth: A phylogenetically explicit analysis of snake feeding ecology. <em>Journal of Animal Ecology</em>, <em>88</em>(5), 757–767.
+</div>
+<div id="ref-cooper2004tradeoffs" class="csl-entry">
+79. Cooper, W. E., &amp; Peréz-Mellado, V. (2004). Tradeoffs between escape behavior and foraging opportunity by the balearic lizard (<em>podarcis lilfordi</em>). <em>Herpetologica</em>, <em>60</em>(3), 321–324.
+</div>
+<div id="ref-shine1980costs" class="csl-entry">
+80. Shine, R. (1980). <span>“Costs”</span> of reproduction in reptiles. <em>Oecologia</em>, <em>46</em>(1), 92–100.
+</div>
+<div id="ref-silva2020reproduction" class="csl-entry">
+81. Silva, K. M., Braz, H. B., Kasperoviczus, K. N., Marques, O. A., &amp; Almeida-Santos, S. M. (2020). Reproduction in the pitviper <em>bothrops jararacussu</em>: Large females increase their reproductive output while small males increase their potential to mate. <em>Zoology</em>, <em>142</em>, 125816.
+</div>
+<div id="ref-cooper2000tradeoffs" class="csl-entry">
+82. Cooper, W. E. (2000). Tradeoffs between predation risk and feeding in a lizard, the broad-headed skink (<em>eumeces laticeps</em>). <em>Behaviour</em>, <em>137</em>(9), 1175–1189.
+</div>
+<div id="ref-werner1993ecological" class="csl-entry">
+83. Werner, E. E., &amp; Anholt, B. R. (1993). Ecological consequences of the trade-off between growth and mortality rates mediated by foraging activity. <em>The American Naturalist</em>, <em>142</em>(2), 242–272.
+</div>
+<div id="ref-huey1986comparative" class="csl-entry">
+84. Huey, R., &amp; Bennett, A. (1986). A comparative approach to field and laboratory studies in evolutionary biology. <em>Predator-Prey Relationshsips. University of Chicago Press, Chicago</em>, 82–98.
+</div>
+<div id="ref-reznick2001evolution" class="csl-entry">
+85. Reznick, D., Buckwalter, G., Groff, J., &amp; Elder, D. (2001). The evolution of senescence in natural populations of guppies (<em>poecilia reticulata</em>): A comparative approach. <em>Experimental Gerontology</em>, <em>36</em>(4-6), 791–812.
+</div>
+<div id="ref-miles2007morphology" class="csl-entry">
+86. Miles, D., Losos, J., &amp; Irschick, D. (2007). Morphology, performance, and foraging mode. <em>Lizard Ecology: The Evolutionary Consequences of Foraging Mode</em>, 49–93.
+</div>
+<div id="ref-peig2009new" class="csl-entry">
+87. Peig, J., &amp; Green, A. J. (2009). New perspectives for estimating body condition from mass/length data: The scaled mass index as an alternative method. <em>Oikos</em>, <em>118</em>(12), 1883–1891.
+</div>
+<div id="ref-feldman2016body" class="csl-entry">
+88. Feldman, A., Sabath, N., Pyron, R. A., Mayrose, I., &amp; Meiri, S. (2016). Body sizes and diversification rates of lizards, snakes, amphisbaenians and the tuatara. <em>Global Ecology and Biogeography</em>, <em>25</em>(2), 187–197.
+</div>
+<div id="ref-atchley1976statistical" class="csl-entry">
+89. Atchley, W. R., Gaskins, C. T., &amp; Anderson, D. (1976). Statistical properties of ratios. I. Empirical results. <em>Systematic Zoology</em>, <em>25</em>(2), 137–148.
+</div>
+<div id="ref-packard1988misuse" class="csl-entry">
+90. Packard, G. C., &amp; Boardman, T. J. (1988). The misuse of ratios, indices, and percentages in ecophysiological research. <em>Physiological Zoology</em>, <em>61</em>(1), 1–9.
+</div>
+<div id="ref-pianka2003lizards" class="csl-entry">
+91. Pianka, E. R., Pianka, E. R., &amp; Vitt, L. J. (2003). <em>Lizards: Windows to the evolution of diversity</em> (Vol. 5). Univ of California Press.
+</div>
+<div id="ref-huelsenbeck2003stochastic" class="csl-entry">
+92. Huelsenbeck, J. P., Nielsen, R., &amp; Bollback, J. P. (2003). Stochastic mapping of morphological characters. <em>Systematic Biology</em>, <em>52</em>(2), 131–158.
+</div>
+<div id="ref-vitt2003history" class="csl-entry">
+93. Vitt, L. J., Pianka, E. R., Cooper, W. E., &amp; Schwenk, K. (2003). History and the global ecology of squamate reptiles. <em>The American Naturalist</em>, <em>162</em>(1), 44–60.
+</div>
+<div id="ref-fritz2010selectivity" class="csl-entry">
+94. Fritz, S. A., &amp; Purvis, A. (2010). Selectivity in mammalian extinction risk and threat types: A new measure of phylogenetic signal strength in binary traits. <em>Conservation Biology</em>, <em>24</em>(4), 1042–1051.
+</div>
+<div id="ref-orme2013caper" class="csl-entry">
+95. Orme, D., Freckleton, R., Thomas, G., Petzoldt, T., Fritz, S., Isaac, N., &amp; Pearse, W. (2013). The caper package: Comparative analysis of phylogenetics and evolution in r. <em>R Package Version</em>, <em>5</em>(2), 1–36.
+</div>
+<div id="ref-harvey1991comparative" class="csl-entry">
+96. Harvey, P. H., Pagel, M. D.others. (1991). <em>The comparative method in evolutionary biology</em> (Vol. 239). Oxford university press Oxford.
+</div>
+<div id="ref-pinheiro2007linear" class="csl-entry">
+97. Pinheiro, J., Bates, D., DebRoy, S., Sarkar, D., &amp; Team, R. C. (2007). Linear and nonlinear mixed effects models. <em>R Package Version</em>, <em>3</em>(57), 1–89.
+</div>
+<div id="ref-brown2007lizard" class="csl-entry">
+98. Brown, T. K., &amp; Nagy, K. (2007). Lizard energetics and the sit-and-wait vs. Wide-foraging paradigm. <em>Lizard Ecology. Cambridge University Press, Cambridge, UK</em>, 120–140.
+</div>
+<div id="ref-lynch1980evolution" class="csl-entry">
+99. Lynch, M. (1980). The evolution of cladoceran life histories. <em>The Quarterly Review of Biology</em>, <em>55</em>(1), 23–42.
+</div>
+<div id="ref-reznick1982impact" class="csl-entry">
+100. Reznick, D., &amp; Endler, J. A. (1982). The impact of predation on life history evolution in trinidadian guppies (<em>poecilia reticulata</em>). <em>Evolution</em>, 160–177.
+</div>
+<div id="ref-anreiter2019foraging" class="csl-entry">
+101. Anreiter, I., &amp; Sokolowski, M. B. (2019). The foraging gene and its behavioral effects: Pleiotropy and plasticity. <em>Annual Review of Genetics</em>, <em>53</em>, 373–392.
+</div>
+<div id="ref-anreiter2016foraging" class="csl-entry">
+102. Anreiter, I., Vasquez, O. E., Allen, A. M., &amp; Sokolowski, M. B. (2016). Foraging path-length protocol for drosophila melanogaster larvae. <em>JoVE (Journal of Visualized Experiments)</em>, <em>110</em>, e53980.
+</div>
+<div id="ref-sokolowski1997evolution" class="csl-entry">
+103. Sokolowski, M. B., Pereira, H. S., &amp; Hughes, K. (1997). Evolution of foraging behavior in drosophila by density-dependent selection. <em>Proceedings of the National Academy of Sciences</em>, <em>94</em>(14), 7373–7377.
+</div>
+<div id="ref-fitzpatrick2007maintaining" class="csl-entry">
+104. Fitzpatrick, M. J., Feder, E., Rowe, L., &amp; Sokolowski, M. B. (2007). Maintaining a behaviour polymorphism by frequency-dependent selection on a single gene. <em>Nature</em>, <em>447</em>(7141), 210–212.
+</div>
+</div>
+</div>
+</div>
+
+
+
+<script>
+// when the page is about to reload via servr, remember the scroll position
+document.addEventListener('servr:reload', function(e) {
+  sessionStorage.setItem('pagedown-scroll', window.scrollY);
+});
+</script>
+</body>
+</html>

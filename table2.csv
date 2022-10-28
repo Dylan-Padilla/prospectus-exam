@@ -1,0 +1,5 @@
+"Model","K","logLik","AICc","delta","weight"
+"full_mod2","rep_out ~ M_females * foraging.mode",8,-1377.41901796988,2771.14055694816,0,0.999011628972329
+"full_mod3","rep_out ~ M_females + foraging.mode",6,-1386.40087590214,2784.97748402184,13.8369270736871,0.000988371027670784
+"full_mod","rep_out ~ M_females * foraging.mode",7,-1434.91013346822,2884.05506777502,112.914510826867,3.02340310109366e-25
+"full_mod1","rep_out ~ M_females + foraging.mode",5,-1440.89634461893,2891.91795019819,120.777393250038,5.93052075408546e-27
